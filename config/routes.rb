@@ -1,10 +1,3 @@
-#config/routes.rb
-resources :pages_controller do
-  collection do
-    get :home
-  end
-  	get :about
-  end
-  	get :contact
-  end
-end
+match '/home' => 'pages#home'
+match '/about' => 'pages#about'
+match '/contact' => 'pages#contact'
